@@ -1,0 +1,15 @@
+{
+  "workbench.colorCustomizations": {
+    "minimap.background": "#46464632",
+    "scrollbar.shadow": "#46464632"
+  },
+  "files.exclude": {
+    "**/.git": true,
+    "**/.svn": true,
+    "**/.hg": true,
+    "**/CVS": true,
+    "**/.DS_Store": true,
+    "**/Thumbs.db": true
+  },
+  "hide-files.files": []
+}
