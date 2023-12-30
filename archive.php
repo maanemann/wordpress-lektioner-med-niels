@@ -3,7 +3,7 @@
   // Husk </html> i bunden af filen, <html> er inkluderet i parts/head.
 ?>
 <body>
-  <!-- Header --> 
+  <!-- Header -->
   <?php
     get_template_part("parts/header");
   ?>

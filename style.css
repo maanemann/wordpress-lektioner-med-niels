@@ -19,7 +19,12 @@ body {
   color: rgb(241, 232, 210);
   background: rgb(113, 95, 75);
 }
+
 figure {
   padding: 0;
   margin: 0;
+}
+
+footer {
+  background-image: url(assets/bg.jpg);
 }
