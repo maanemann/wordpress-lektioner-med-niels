@@ -10,12 +10,20 @@ register_nav_menus(
 );
 
 function load_scripts_and_styles() {
-  // JS
+  // CSS :
+    wp_enqueue_style(
+      "style",
+      get_template_directory_uri()."/style.css"
+    );
 
-  // CSS
-  wp_enqueue_style(
-    "style", get_stylesheet_uri()
-  );
+  // JS :
+    wp_enqueue_script(
+      'script-name',
+      get_template_directory_uri().'/js/script.js',
+      array(),
+      '1.0.0',
+      true
+    );
 }
 
 add_action( 'wp_enqueue_scripts', 'load_scripts_and_styles' );

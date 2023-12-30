@@ -3,12 +3,12 @@
   // Husk </html> i bunden af filen, <html> er inkluderet i parts/head.
 ?>
 <body>
-  <!-- Header -->
+  <!-- HEADER : -->
   <?php
-  get_template_part("parts/header");
+    get_template_part("parts/header");
   ?>
 
-  <!-- INDHOLD -->
+  <!-- INDHOLD : -->
   <main class="main">
     <?php
       if( have_posts() ) {
@@ -37,7 +37,7 @@
     ?>
   </main>
   
-  <!-- Footer -->
+  <!-- FOOTER : -->
   <?php
   get_template_part("parts/footer");
   ?>

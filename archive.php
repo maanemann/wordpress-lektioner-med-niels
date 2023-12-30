@@ -5,7 +5,7 @@
 <body>
   <!-- Header -->
   <?php
-  get_template_part("parts/header");
+    get_template_part("parts/header");
   ?>
 
   <!-- INDHOLD -->
