@@ -1,5 +1,7 @@
 <footer class="footer">
-  Her er en footer
+  <?php
+    dynamic_sidebar("footer-widget");
+  ?>
 </footer>
 <?php
   wp_footer();

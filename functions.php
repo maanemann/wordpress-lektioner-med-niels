@@ -1,6 +1,6 @@
 <?php
 
-// Menu
+// MENU :
 
 register_nav_menus(
   array(
@@ -35,5 +35,49 @@ function returner_excerpt_length( $length ) {
 
 add_filter("excerpt_length", "returner_excerpt_length", 999);
 
-// THEME SUPPORT
+
+// THEME SUPPORT :
+
 add_theme_support("post-thumbnails");
+
+
+// WIDGETS :
+
+function custom_widgets(){
+  register_sidebar(
+      array(
+          "name"          => "Footer Widgets",
+          "id"            => "footer-widget",
+          "before_widget" => "<div class='widget'>",
+          "after_widget"  => "</div>"
+      )
+  );
+  register_sidebar(
+      array(
+          "name"          => "Header Widgets",
+          "id"            => "header-widget",
+          "before_widget" => "<div class='widget'>",
+          "after_widget"  => "</div>"
+      )
+  );
+  register_sidebar(
+      array(
+          "name"          => "My Widget",
+          "id"            => "my-widget",
+          "before_widget" => "<div class='widget'>",
+          "after_widget"  => "</div>"
+      )
+  );
+}
+
+add_action("widgets_init", "custom_widgets");
+
+
+// SHORT CODES :
+  // Shortcodes skrives i wp editoren i [], fx "[shortcodeName]"
+
+  function shortcodeFunction() {
+    return "This shortcode works.";
+  }
+
+  add_shortcode("shortcodeName","shortcodeFunction");
