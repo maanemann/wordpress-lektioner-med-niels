@@ -15,7 +15,7 @@
         // Main loop
         while ( have_posts() ) {
           the_post();
-          the_title("<h1 class='heading'>", "</h1>");
+          the_title("<h1 class='heading text-red-400'>", "</h1>");
           ?>
           <figure class="thumb">
               <?php
